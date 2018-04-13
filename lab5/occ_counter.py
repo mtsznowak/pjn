@@ -18,7 +18,7 @@ interpunction_pattern = re.compile("(?:^%s)|(?:%s$)" % (interpunction_signs, int
 
 first_index = 392
 last_index = 550
-last_index = 393
+# last_index = 396
 
 if __name__ == "__main__":
   p = subprocess.Popen(['curl', '-XPOST', 'localhost:9200', '-d', '@-'],stdout=subprocess.PIPE,stdin=subprocess.PIPE)
@@ -42,7 +42,6 @@ if __name__ == "__main__":
 
       p.stdin.write(text.encode('UTF-8'))
       p.stdin.write(b" ")
-      break
 
 
   print("Communicating")
