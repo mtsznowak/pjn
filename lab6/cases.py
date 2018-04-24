@@ -1,0 +1,11 @@
+from enum import Enum
+
+class Case(Enum):
+  CYWILNE = 1
+  UBEZPIECZENIA_SPOŁECZNE = 2
+  KARNE = 3
+  GOSPODARCZE = 4
+  PRAWO_PRACY = 5
+  PRAWO_RODZINNE = 6
+  WYKROCZENIA = 7
+  PRAWO_KONKURENCJI = 8
